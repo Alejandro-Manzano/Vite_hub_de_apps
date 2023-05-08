@@ -1,0 +1,30 @@
+:root {
+  --font-family-one: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --principal-color: #2186E3;
+  --second-font: 'Bruno Ace SC', cursive;
+    background-color: #242424;
+  
+}
+
+main {
+  min-height: 70vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
