@@ -19,7 +19,7 @@ const template = () => {
             </li>
 
             <li>
-                <img src="https://res.cloudinary.com/dul2s17m2/image/upload/v1683209869/WHACK_A_MOLE_ggnpn5.jpg" alt="Pokemon-img" id="pokemonImg" >
+                <img src="https://res.cloudinary.com/dul2s17m2/image/upload/v1683209869/WHACK_A_MOLE_ggnpn5.jpg" alt="Wakatopo" id="Wakatopo" >
                 <h2>Wakatopo</h2>
             </li>
 
@@ -55,6 +55,11 @@ const addListeners = () => {
     const hangManImg = document.querySelector("#hangManImg")
     hangManImg.addEventListener("click", () => {
         initControler("HangMan");
+    })
+
+    const Wakatopo = document.querySelector("#Wakatopo")
+    Wakatopo.addEventListener("click", () => {
+        initControler("Wakatopo");
     })
 
 }

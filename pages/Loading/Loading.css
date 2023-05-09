@@ -1,38 +1,68 @@
-.loader {
-    width: 48px;
-    height: 48px;
-    border: 10px solid #fff;
-    border-radius: 50%;
-    position: relative;
-    transform: rotate(45deg);
-    box-sizing: border-box;
-    margin: 4rem;
+.pokemon-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pokemon-loading-head, .pokemon-loading-body, .pokemon-loading-tail {
+  width: 48px;
+  height: 48px;
+  background-color: #f1c40f;
+  border-radius: 50%;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.pokemon-loading-head {
+  animation-name: head-animation;
+}
+
+.pokemon-loading-body {
+  animation-name: body-animation;
+  animation-delay: 0.2s;
+}
+
+.pokemon-loading-tail {
+  animation-name: tail-animation;
+  animation-delay: 0.4s;
+}
+
+@keyframes head-animation {
+  0% {
+    transform: translateY(0);
   }
-  .loader::before {
-    content: "";
-    position: absolute;
-    box-sizing: border-box;
-    inset: -10px;
-    border-radius: 50%;
-    border: 10px solid var(--secondary);
-    animation: prixClipFix 2s infinite linear;
+  50% {
+    transform: translateY(-40px);
   }
-  
-  @keyframes prixClipFix {
-    0% {
-      clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
-    }
-    25% {
-      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
-    }
-    50% {
-      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
-    }
-    75% {
-      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
-    }
-    100% {
-      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
-    }
+  100% {
+    transform: translateY(0);
   }
+}
+
+@keyframes body-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes tail-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
   
