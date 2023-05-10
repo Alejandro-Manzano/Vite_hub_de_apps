@@ -14,7 +14,7 @@ export const dataService = async() => {
                 <img src=${pokemon.image} alt=${pokemon.name} alt=${name}>
                 <div class="name-aline">
                 <p class="id">#0${pokemon.id}</p>
-                <h2>${name}</h2>
+                <h2 class="namePokemon">${name}</h2>
                 </div>
                 <h4 class="type"><span>type:</span> ${pokemon.type}</h4>
                 <p class="height"><span>H:</span> ${pokemon.height}</p>

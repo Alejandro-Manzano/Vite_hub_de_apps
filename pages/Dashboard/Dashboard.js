@@ -24,12 +24,12 @@ const template = () => {
             </li>
 
             <li>
-                <img src="https://res.cloudinary.com/dul2s17m2/image/upload/v1683210025/unnamed_e2js5b.png" alt="Pokemon-img" id="pokemonImg" >
+                <img src="https://res.cloudinary.com/dul2s17m2/image/upload/v1683210025/unnamed_e2js5b.png" alt="Quiz-img" id="quizImg" >
                 <h2>Football Quiz</h2>
             </li>
 
             <li>
-                <img src="https://res.cloudinary.com/dul2s17m2/image/upload/v1683209879/unnamed_1_xax5ao.png" alt="Pokemon-img" id="pokemonImg" >
+                <img src="https://res.cloudinary.com/dul2s17m2/image/upload/v1683209879/unnamed_1_xax5ao.png" alt="Brain-img" id="memoryImg" >
                 <h2>Memory Game</h2>
             </li>
 
@@ -60,6 +60,16 @@ const addListeners = () => {
     const Wakatopo = document.querySelector("#Wakatopo")
     Wakatopo.addEventListener("click", () => {
         initControler("Wakatopo");
+    })
+
+    const Quiz = document.querySelector("#WquizImg")
+    quizImg.addEventListener("click", () => {
+        initControler("QuizNeo");
+    })
+
+    const memoryGame = document.querySelector("#memoryImg")
+    memoryGame.addEventListener("click", () => {
+        initControler("MemoryGame");
     })
 
 }

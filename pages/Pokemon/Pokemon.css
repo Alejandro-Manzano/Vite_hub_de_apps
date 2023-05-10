@@ -58,7 +58,8 @@ figure {
 }
 
 figure:hover {
-    transform: rotateY(180deg);
+    cursor: pointer;
+    transform: scale(1.1);
   }
   
 figure .front {
@@ -77,8 +78,9 @@ figure .front {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-h2 {
+.namePokemon {
     font-size: 22px;
+    color: black;
 }
 
 .name-aline { /* contenedor del name e id */
