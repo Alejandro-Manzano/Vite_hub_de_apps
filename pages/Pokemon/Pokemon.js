@@ -9,8 +9,8 @@ const template = () => {
 
 return `
     <div class="pokemon-container">
-    <img class="img-pokemon" src="https://res.cloudinary.com/dul2s17m2/image/upload/v1683475738/1200px-International_Pok_C3_A9mon_logo.svg_kwsuqk.png" alt="title">
     <div class="loading"></div>
+    <img class="img-pokemon" src="https://res.cloudinary.com/dul2s17m2/image/upload/v1683475738/1200px-International_Pok_C3_A9mon_logo.svg_kwsuqk.png" alt="title">
     <div class="buttons-container">
         <select class="select">
             <option>Choose a type</option>

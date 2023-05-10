@@ -7,6 +7,24 @@
     gap: 20px;
     padding: 20px;
 }
+
+.button-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.button-container > button {
+    width: 80px;
+    height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid lightblue;
+    background-color: burlywood;
+}
+
+.button-container > button:hover {
+    cursor: pointer;
+    background-color: green;
+}
   
 .heading-title {
     text-align: center;
@@ -46,7 +64,7 @@
     transition: 0.3s all ease;
 }
   
-¡.card.clicked {
+.card.clicked {
     background-color: orange;
 }
   

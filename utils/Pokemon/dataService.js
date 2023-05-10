@@ -1,9 +1,10 @@
 import { Loading } from "../../pages/Loading/Loading";
 import { dataPokemon } from "../../utils/Pokemon/dataPokemon" //3
-const loading = document.querySelector(".loading")
+
 
 export const dataService = async() => {
-
+    const loading = document.querySelector(".loading")
+    loading.innerHTML = Loading();
     const getData = await dataPokemon();
     
     getData.map((pokemon) => {
@@ -23,7 +24,7 @@ export const dataService = async() => {
         `
 
         document.querySelector(".galleryPokemon").innerHTML += templateFigure;
-        
+        loading.innerHTML = "";
     })
    
 }

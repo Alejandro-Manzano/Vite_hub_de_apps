@@ -4,7 +4,10 @@ const template = () => {
 
     return `
     <div class="container">
-    <h2 class="heading-title"><e>Memory Game</e></h2>
+    <div class="button-container">
+    <h2 class="heading-title">Memory Game</h2>
+    <button class="reset">RESTART</button>
+    </div>
     <div class="cards">
       <div class="card" id="icon-1">
         <img src="https://res.cloudinary.com/dul2s17m2/image/upload/v1683704861/grade_FILL0_wght400_GRAD0_opsz48_tsic28.png" alt="icon" />
@@ -64,6 +67,7 @@ const addListeners = () => {
     let counter = 0;
     let firstSelection = ""; //guardo primera carta
     let secondSelection = ""; // guardo segunda carta
+    const button = document.querySelector(".reset")
 
     const cards = document.querySelectorAll(".card");//array de todas las cartas
     cards.forEach((card) => {
@@ -102,6 +106,11 @@ const addListeners = () => {
         }, 200); 
       }
     }
+
+    button.addEventListener("click",()=> {
+        printTemplate();
+        button.style.display = "block"
+    })
     });
 });
 
