@@ -45,6 +45,10 @@
     gap: 25px;
 }
 
+.name-search {
+  color: black;
+}
+
 figure {
     display: flex;
     flex-direction: column;

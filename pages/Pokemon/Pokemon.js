@@ -57,7 +57,7 @@ const addListeners = async() => {
         const figures = document.querySelectorAll(".galleryPokemon figure");
         figures.forEach((figure) => {
             if (figure.getAttribute("id") === selectedOptionClass) {
-                figure.style.display = "block";
+                figure.style.display = "flex";
             } else {
                 figure.style.display = "none";
             }
@@ -78,7 +78,7 @@ const addListeners = async() => {
                 <img src=${pokemon.image} alt=${pokemon.name} alt=${name}>
                 <div class="name-aline">
                   <p class="id">#0${pokemon.id}</p>
-                  <h2>${name}</h2>
+                  <h2 class="name-search">${name}</h2>
                 </div>
                 <h4 class="type"><span>type:</span> ${pokemon.type}</h4>
                 <p class="height"><span>H:</span> ${pokemon.height}</p>
