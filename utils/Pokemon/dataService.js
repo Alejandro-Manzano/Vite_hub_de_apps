@@ -11,15 +11,15 @@ export const dataService = async() => {
 
         const name = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
         const templateFigure = `
-            <figure id="${pokemon.type}">
+            <figure id="${pokemon.type}" class="figure-pokemon">
                 <img src=${pokemon.image} alt=${pokemon.name} alt=${name}>
                 <div class="name-aline">
                 <p class="id">#0${pokemon.id}</p>
                 <h2 class="namePokemon">${name}</h2>
                 </div>
                 <h4 class="type"><span>type:</span> ${pokemon.type}</h4>
-                <p class="height"><span>H:</span> ${pokemon.height}</p>
-                <p class="weight"><span>W:</span> ${pokemon.weight}</p>
+                <p class="height"><span>Height:</span> ${pokemon.height}<span>cm</span></p>
+                <p class="weight"><span>Weight:</span> ${pokemon.weight}<span>kg</span></p>
             </figure>
         `
 

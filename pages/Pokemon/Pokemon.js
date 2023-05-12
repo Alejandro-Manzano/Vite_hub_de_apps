@@ -81,8 +81,8 @@ const addListeners = async() => {
                   <h2 class="name-search">${name}</h2>
                 </div>
                 <h4 class="type"><span>type:</span> ${pokemon.type}</h4>
-                <p class="height"><span>H:</span> ${pokemon.height}</p>
-                <p class="weight"><span>W:</span> ${pokemon.weight}</p>
+                <p class="height"><span>Height:</span> ${pokemon.height}<span>cm</span></p>
+                <p class="weight"><span>Weight:</span> ${pokemon.weight}<span>kg</span></p>
               </figure>
             `;
           }).join(""); 

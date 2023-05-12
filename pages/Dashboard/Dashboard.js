@@ -1,13 +1,15 @@
 import { initControler } from "../../utils/MainUtils/rout";
+import { inputValueLogin } from "../Login/Login";
 import "./Dashboard.css";
 
 
 const template = () => {
     return   `
+    <div class="container-saludo-pokemon">
+    <p class="pvalue"></p>
+    </div>
     <div class="containerDashboard">
-
         <ul class="container-img">
-
             <li>
                     <img src="https://res.cloudinary.com/dul2s17m2/image/upload/v1683128392/10-curiosidades-de-Pokemon-que-quiza-no-conoces_jueih2.webp" alt="Pokemon-img" id="pokemonImg" >
                     <h2>Pokemon</h2>
@@ -46,6 +48,9 @@ const template = () => {
 
 
 const addListeners = () => {
+
+    const pSaludo = document.querySelector(".pvalue");
+    pSaludo.innerHTML = "Bienvenido " +inputValueLogin+ "! vamos a jugar.";
 
     const imgPokemon = document.querySelector("#pokemonImg")
     imgPokemon.addEventListener("click", () => {

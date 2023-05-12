@@ -16,7 +16,7 @@ const template = () => `
   
 `
 ;
-
+export let inputValueLogin = "";
 const addListeners = () => {
     
   const buttonLogin = document.getElementById("buttonLogin"); //llamo al botón
@@ -26,7 +26,8 @@ const addListeners = () => {
     const inputLogin = document.querySelector("#inputLogIn"); //cojo los dos input
 
     localStorage.setItem("user", inputLogin.value);
-
+    inputValueLogin = inputLogin.value 
+    console.log(inputValueLogin);
     if (localStorage.getItem("user"))
       document.querySelector("nav").style.display = "flex";
     initControler();

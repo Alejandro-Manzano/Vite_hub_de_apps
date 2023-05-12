@@ -7,6 +7,21 @@
     justify-content: center;
 }
 
+.container-saludo-pokemon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-saludo-pokemon > p {
+    font-size: 25px;
+    color: whitesmoke;
+    font-family: var(--second-font);
+    color: #FF65;
+}
+
 .container-img {
     width: 85vw;
     min-height: 70vh;
@@ -52,5 +67,8 @@
     }
     .container-img > li > img {
         width: 300px;
+    }
+    .container-saludo-pokemon > p {
+        font-size: 20px;
     }
 }
